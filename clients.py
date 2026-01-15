@@ -187,5 +187,5 @@ for epoch in range(epochs):
     # A client trains on 10k data, gets the benefit of model that's trained on 50k data
     # Clients never shares their training data in the network. Only the training updates are shared (secured)
     # Global model trained on huge amount of data, within significantly reduced completion time
-    # A greatly insightful model as its trained on vast and variety of data
+    # A greatly insightful model as it's trained on vast and variety of data
     # and many more...
