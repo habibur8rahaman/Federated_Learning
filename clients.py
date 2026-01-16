@@ -84,7 +84,7 @@ def build_model(input_shape=input_shape, num_classes=10):
 # 5 LeNet model for 5 clients
 models = []
 for _ in range(num_clients):
-    model = build_model()  # build the model without splitting
+    model = build_model()
     models.append(model)
 
 # Loss Function
@@ -162,8 +162,7 @@ for epoch in range(epochs):
     global_models.append(models[0])
 
 
-    # An evaluation function to show the global model's accuracy. The global model is updated aggregating the local
-    # training updates of the clients
+    # An evaluation function to show the global model's accuracy. The global model is updated aggregating the local training updates of the clients
     evaluate_global_model(models[0])
 
 
